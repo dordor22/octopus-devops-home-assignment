@@ -1,7 +1,7 @@
 # Octopus DevOps Home Assignment:
 
 ## Overview
-This project contains containerized wep application as part of DevOps home assignment
+This project contains containerized web application as part of DevOps home assignment
 
 The application uses:
 - Node.js
@@ -38,6 +38,9 @@ and the appliction returns simple HTML page who display the number of apples in 
   - default.conf
 --docs/
   -architecture.md
+  -images/
+   -docker-compose-ps.png
+   -app-homepage.png
 --.github/
   -workflows/
     -ci.yml
@@ -83,3 +86,18 @@ The pipeline:
 - Wait for the readiness
 - Verify health endpoints
 - Verify the homepage contains the correct apples quantity
+```
+
+## Runtime Verification
+
+Running containers
+
+The following screenshot shows the running services:
+
+![docker compose ps](docs/images/docker-compose-ps.png)
+
+Application response
+
+The application homepage:
+
+![application homepage](docs/images/app-homepage.png)
