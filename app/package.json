@@ -1,0 +1,13 @@
+{
+  "name": "octopus-devops-home-assignment-app",
+  "version": "1.0.0",
+  "description": "Containerized Node.js application for Octopus DevOps home assignment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.17.0"
+  }
+}
