@@ -15,7 +15,7 @@ each component runs in its own container.
 (instead of visual architecture there are more notes about the architecture and additional information in /docs/architecture.md in the original path of the project)
 
 ## Project structure:
-'''text
+```text
 --app/
   -Dockerfile
   -.dockerignore
@@ -30,7 +30,7 @@ each component runs in its own container.
 --docker-compose.yml
 --Makefile
 --README.md
-'''
+```
 ## Application Behavior
 the application connects to MongoDB read the apples document from the inventory collection and returns the quantity in simple HTML response
 (expected result should be 5 as mentiones in the email with the instructions)
@@ -46,13 +46,13 @@ and health endpoint via:
 http://localhost:8080/health
 
 ## Useful Commands via Makefile
-'''text
+```text
 start - make up
 stop - make down
 remove containers and volumes - make reset
 via logs - make logs
 docker ps - make ps
-'''
+```
 ## Provisioning Notes
 The MongoDB seed data is automatically loaded from mongo-init/init.js
 The seed script runs during the initial database startup
