@@ -46,4 +46,4 @@ services:
     restart: unless-stopped
 
 volumes:
-  mongo_data:d
+  mongo_data:

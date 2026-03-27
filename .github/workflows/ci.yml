@@ -43,4 +43,4 @@ jobs:
 
       - name: Shut down services
         if: always()
-        run: docker compose down -vd
+        run: docker compose down -v
